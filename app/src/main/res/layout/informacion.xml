@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/info_coordinator"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Informacion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/alert_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="716dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/infosolar"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="El Grupo de Investigación en Tecnologías de la Electrónica y Automática (GITEA) fue creado el 18 de agosto de 2017 en la Facultad de Informática y Electrónica (FIE) de la Escuela Superior Politécnica de Chimborazo (ESPOCH).\n\nGracias al proyecto Infosolar ayuda a la recolección de datos e indicando el índice de radiación UV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.169" />
+
+        <ImageView
+            android:id="@+id/web_espoch"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/espoch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toEndOf="@+id/web_gitea"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.306" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web GITEA"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.249"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/web_gitea"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <ImageView
+            android:id="@+id/web_gitea"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/portada"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.306" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web ESPOCH"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.705"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/web_espoch"
+            app:layout_constraintVertical_bias="0.2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_primary"
+        android:id="@+id/navigation">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/icon_home"
+            android:src="@drawable/home"
+            android:layout_gravity="center"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/color_moderado_start"
+                android:centerColor="@color/color_moderado_center"
+                android:endColor="@color/color_moderado_end"
+                android:type="linear"
+                android:angle="1"
+                />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</selector>

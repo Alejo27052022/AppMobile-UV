@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#959494</color>
+    <color name="color_primary">#021B48</color>
+    <color name="color_green">#CDFFB2</color>
+    <color name="color_yellow">#FFFF6B</color>
+    <color name="color_orange">#FFB574</color>
+    <color name="color_red">#FF9B9B</color>
+    <color name="color_purple">#FFAAEF</color>
+
+    <color name="txt_color_green">#359302</color>
+    <color name="txt_color_orange">#DF7213</color>
+    <color name="txt_color_red">#C60404</color>
+
+    <color name="color_uno">#E22E3175</color>
+    <color name="color_dos">#476CFF</color>
+
+    <color name="color_bajo_start">#809CFF9C</color>
+    <color name="color_bajo_end">#802BFF00</color>
+
+    <color name="color_moderado_start">#80FCFF9C</color>
+    <color name="color_moderado_center">#80FFFF00</color>
+    <color name="color_moderado_end">#80D9E900</color>
+
+    <color name="color_alto_start">#80FFD69C</color>
+    <color name="color_alto_center">#80FF8800</color>
+    <color name="color_alto_end">#80B06803</color>
+
+    <color name="color_muyalto_start">#80FFA49C</color>
+    <color name="color_muyalto_center">#FF0000</color>
+    <color name="color_muyalto_end">#808F0202</color>
+
+    <color name="color_extalto_start">#80F29CFF</color>
+    <color name="color_extalto_center">#80B400CF</color>
+    <color name="color_extalto_end">#808E03B0</color>
+
+    <color name="color_fondo_tarde_start">#CCC05E17</color>
+    <color name="color_fondo_tarde_end">#CCFBFF80</color>
+
+    <color name="color_fondo_noche_start">#000C18FF</color>
+    <color name="color_fondo_noche_end">#26387D</color>
+
+</resources>
