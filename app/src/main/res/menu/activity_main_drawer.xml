@@ -14,5 +14,9 @@
             android:icon="@drawable/alerta_icon"
             android:title="Generar Alerta"
             />
+        <item
+            android:id="@+id/nav_item_grafico"
+            android:icon="@drawable/grafico"
+            android:title="Gráfico UV"/>
     </group>
 </menu>

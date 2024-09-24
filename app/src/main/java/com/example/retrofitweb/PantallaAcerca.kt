@@ -4,15 +4,9 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
 import com.example.myapp.BaseActivity
-import com.google.android.material.navigation.NavigationView
 
-class Informacion : BaseActivity () {
-
+class PantallaAcerca : BaseActivity(){
     val url_web_espoch = "https://www.espoch.edu.ec/";
     val url_web_gitea = "http://gitea.espoch.edu.ec:8085/";
 

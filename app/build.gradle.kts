@@ -65,6 +65,9 @@ dependencies {
     implementation("com.google.code.gson:gson:2.8.8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0")
+    implementation("com.github.tehras:charts:0.2.4-alpha")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation("com.androidplot:androidplot-core:1.5.11")
 
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")

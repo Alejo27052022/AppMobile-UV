@@ -8,8 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.retrofitweb.Informacion
+import com.example.retrofitweb.GenerarAlerta
+import com.example.retrofitweb.Grafico
 import com.example.retrofitweb.Inicio
+import com.example.retrofitweb.PantallaAcerca
 import com.example.retrofitweb.R
 import com.google.android.material.navigation.NavigationView
 
@@ -41,7 +43,15 @@ open class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                 startActivity(intent)
             }
             R.id.nav_item_three -> {
-                val intent = Intent(this, Informacion::class.java)
+                val intent = Intent(this, PantallaAcerca::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_item_alerta -> {
+                val intent = Intent(this, GenerarAlerta::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_item_grafico -> {
+                val intent = Intent(this, Grafico::class.java)
                 startActivity(intent)
             }
         }
