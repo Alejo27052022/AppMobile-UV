@@ -10,5 +10,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="SpinnerTextAppearance" parent="android:TextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
     <style name="Theme.RetrofitWeb" parent="Base.Theme.RetrofitWeb" />
 </resources>

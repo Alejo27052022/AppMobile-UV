@@ -31,6 +31,15 @@
             android:windowSoftInputMode="adjustPan"
             android:exported="true" />
         <activity
+            android:name=".PantallaCuidado"
+            android:exported="true"/>
+        <activity
+            android:name=".PantallaRadiacion"
+            android:exported="true"/>
+        <activity
+            android:name=".PantallaDatos"
+            android:exported="true"/>
+        <activity
             android:name=".PantallaAcerca"
             android:exported="true"/>
         <!-- Declarar el servicio -->

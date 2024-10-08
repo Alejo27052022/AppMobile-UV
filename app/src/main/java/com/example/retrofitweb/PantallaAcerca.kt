@@ -7,29 +7,9 @@ import android.widget.ImageView
 import com.example.myapp.BaseActivity
 
 class PantallaAcerca : BaseActivity(){
-    val url_web_espoch = "https://www.espoch.edu.ec/";
-    val url_web_gitea = "http://gitea.espoch.edu.ec:8085/";
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        layoutInflater.inflate(R.layout.informacion, findViewById(R.id.content_frame))
-
-        val inicio_var: ImageView = findViewById(R.id.icon_home)
-        inicio_var.setOnClickListener {
-            val intent: Intent = Intent(this, Inicio::class.java)
-            startActivity(intent)
-        }
-
-        val web_gitea : ImageView = findViewById(R.id.web_gitea)
-        web_gitea.setOnClickListener {
-            val intent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse(url_web_gitea))
-            startActivity(intent)
-        }
-
-        val web_espoch : ImageView = findViewById(R.id.web_espoch)
-        web_espoch.setOnClickListener {
-            val intent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse(url_web_espoch))
-            startActivity(intent)
-        }
+        layoutInflater.inflate(R.layout.pantalla_acerca, findViewById(R.id.content_frame))
     }
 }

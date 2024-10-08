@@ -276,7 +276,7 @@ class Inicio : BaseActivity() {
     // Manejo de Errores
     private fun handleError(e: Exception) {
         Log.e("Inicio", "Error al obtener datos de la API: $e")
-        textView.text = "Error ${e.message}"
+        textView.text = "Error de Conexión"
         textView.setTextColor(Color.RED)
         updateHourAndWeatherImage()
     }

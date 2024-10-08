@@ -2,10 +2,11 @@ package com.example.retrofitweb
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapp.BaseActivity
 
-class PantallaDatos : AppCompatActivity() {
+class PantallaDatos : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.pantalla_datos)
+        layoutInflater.inflate(R.layout.pantalla_datos, findViewById(R.id.content_frame))
     }
 }
