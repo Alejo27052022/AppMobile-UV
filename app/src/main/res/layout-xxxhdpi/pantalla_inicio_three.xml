@@ -75,6 +75,7 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/gray"
             android:clickable="false" />
 
         <Button
@@ -82,7 +83,6 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_alignParentEnd="true"
-            android:backgroundTint="@color/gray"
             android:clickable="false" />
     </RelativeLayout>
 
