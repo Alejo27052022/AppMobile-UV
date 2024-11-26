@@ -21,9 +21,9 @@
     <color name="color_bajo_start">#00A706</color>
     <color name="color_bajo_end">#2BFF00</color>
 
-    <color name="color_moderado_start">#80FCFF9C</color>
-    <color name="color_moderado_center">#80FFFF00</color>
-    <color name="color_moderado_end">#80D9E900</color>
+    <color name="color_moderado_start">#C9CF00</color>
+    <color name="color_moderado_center">#E3E330</color>
+    <color name="color_moderado_end">#B2BC1A</color>
 
     <color name="color_alto_start">#80FFD69C</color>
     <color name="color_alto_center">#80FF8800</color>

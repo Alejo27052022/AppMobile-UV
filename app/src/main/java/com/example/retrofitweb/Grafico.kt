@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.widget.FrameLayout
+import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
 import com.androidplot.xy.BoundaryMode
 import com.androidplot.xy.LineAndPointFormatter
@@ -46,23 +47,36 @@ class Grafico : BaseActivity() {
     }
 
     private fun obtenerDatosUV() {
-        // Uso de coroutines para realizar la llamada a la API
         lifecycleScope.launch {
             try {
                 val uvIndexDataList = retrofitService.getUVIndexData()
                 if (uvIndexDataList.isNotEmpty()) {
+                    // Obtener la fecha de la primera entrada
+                    val fechaCapturada = uvIndexDataList.first().timestamp
+
+                    // Convertir la fecha al formato deseado
+                    val inputFormatter = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault())
+                    val date = inputFormatter.parse(fechaCapturada)
+
+                    val outputFormatter = SimpleDateFormat("EEEE d 'de' MMMM 'del' yyyy", Locale("es", "ES"))
+                    val fechaFormateada = date?.let { outputFormatter.format(it) } ?: "Fecha no disponible"
+
+                    // Actualizar el TextView con la fecha formateada
+                    val tvFechaCapturada: TextView = findViewById(R.id.txt_date)
+                    tvFechaCapturada.text = "$fechaFormateada"
+
                     // Crear gráfico si hay datos disponibles
                     createGraph(uvIndexDataList)
                 } else {
-                    // Mostrar mensaje si no hay datos
                     Log.d("Gráfico", "No hay datos de UV disponibles.")
                 }
             } catch (e: Exception) {
-                // Manejo de errores
                 Log.e("Gráfico", "Error al obtener los datos de UV: ${e.message}")
             }
         }
     }
+
+
 
     private fun createGraph(uvIndexDataList: List<UVIndexData>) {
         val xyPlot = findViewById<XYPlot>(R.id.xyplot_graf)

@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/imagen_piel"
-        android:layout_width="451dp"
-        android:layout_height="496dp"
+        android:layout_width="300dp"
+        android:layout_height="242dp"
         android:layout_marginTop="72dp"
         android:src="@drawable/bloqueador"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         android:layout_marginTop="84dp"
         android:text="Protege tu Piel"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,12 +42,12 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="607dp"
-        android:layout_height="163dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Nuestra aplicación te enviará alertas cuando el índice sea superior a 6 para recordarte en usar protector solar o sombrero para prevenir el riesgo de cáncer de piel."
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"

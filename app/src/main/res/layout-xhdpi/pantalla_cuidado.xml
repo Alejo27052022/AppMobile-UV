@@ -7,9 +7,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:paddingTop="30dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -20,7 +18,7 @@
             android:layout_height="wrap_content"
             android:text="Protección Solar"
             android:textColor="@color/black"
-            android:textSize="22dp"
+            android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +42,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/gorra"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +54,8 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:src="@drawable/lentes"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -69,8 +67,8 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:src="@drawable/crema_solar"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -82,8 +80,8 @@
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:src="@drawable/arboles"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -94,8 +92,8 @@
                 app:layout_constraintVertical_bias="0.028" />
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="20dp"
                 android:src="@drawable/paraguas"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -112,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="La protección solar es fundamental para minimizar los efectos dañinos de la radiación ultravioleta en la piel y los ojos. Es recomendable utilizar los siguientes implementos:"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -126,6 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="•	Uso de crema para el cuidado de piel, es recomendable aplicar un protector solar con un factor de protección de 30 o más, incluso en días nublados."
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -139,6 +139,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="•	Uso de gorra y lentes, además de usar ropa ligera que cubra la mayor parte, es una medida efectiva para reducir la exposición directa al sol."
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -152,6 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="•	Buscar arboles que te generarán sombras para que puedas llegar a tu destino reduciendo la exposición directa al sol"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -165,6 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="•	Evitar el uso de camas de bronceado es otra recomendación clave, ya que emiten radiación UV que puede incrementar el riesgo de daño a la piel y de desarrollar cáncer de piel."
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -179,7 +182,7 @@
             android:layout_height="wrap_content"
             android:text="Prevención del cáncer de Piel"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -195,6 +198,7 @@
             android:text="La prevención del cáncer de piel se centra en reducir la exposición a la radiación UV. Usa protector solar con un FPS de 30 o más, y aplica de nuevo cada dos horas. Evita el sol entre las 10 a.m. y 4 p.m. y usa ropa protectora, un sombrero de ala ancha y gafas de sol. Realiza autoexámenes periódicos de tu piel y consulta a un dermatólogo si notas cambios en lunares o manchas. La detección temprana es clave para una mejor prognosis."
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.266"
@@ -204,4 +208,3 @@
 
     </LinearLayout>
 </ScrollView>
-

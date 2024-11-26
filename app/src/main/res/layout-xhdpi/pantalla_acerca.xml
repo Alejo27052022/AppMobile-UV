@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Grupo GITEA"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="El Grupo de Investigación en Tecnologías de la Electrónica y Automática (GITEA) fue creado el 18 de agosto de 2017 en la Facultad de Informática y Electrónica (FIE), de la Escuela Superior Politécnica de Chimborazo (ESPOCH). La finalidad de la investigación del GITEA tiene una vocación aplicada a la generación de proyectos de investigación, publicación de resultados de investigación y transferencia de conocimientos a los actores en el ámbito de las Tecnologías de la Información, Comunicación y Procesos Industriales."
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.266"
@@ -53,7 +54,7 @@
         android:layout_height="wrap_content"
         android:text="Desarrolladores"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,9 +80,9 @@
         android:text="• Patricio Espinoza Moncada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.207" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/imagen_sol"
-        android:layout_width="451dp"
-        android:layout_height="496dp"
+        android:layout_width="229dp"
+        android:layout_height="242dp"
         android:layout_marginTop="72dp"
         android:src="@drawable/sol"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         android:layout_marginTop="84dp"
         android:text="Niveles de Radiación UV"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,14 +42,13 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="607dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="Consulta el índice de radiación UV en tiempo real y mantente informado para tomar las precauciones necesarias según el nivel de radiación."
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -68,7 +67,6 @@
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_alignParentStart="true"
-            android:backgroundTint="@color/gray"
             android:clickable="false"
             android:textColorLink="#8E8E8E" />
 
@@ -76,6 +74,7 @@
             android:id="@+id/button2"
             android:layout_width="50dp"
             android:layout_height="30dp"
+            android:backgroundTint="@color/gray"
             android:layout_centerHorizontal="true"
             android:clickable="false" />
 

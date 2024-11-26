@@ -17,9 +17,6 @@ import com.example.retrofitweb.service.UVIndexService
 class GenerarAlerta : BaseActivity() {
 
     private lateinit var alerta: Switch
-    private lateinit var spinner: Spinner
-    private lateinit var alerta_activada: Switch
-    private lateinit var constraint_layout2: ConstraintLayout
     private lateinit var notificationManager: NotificationManager
     private lateinit var sharedPreferences: SharedPreferences
 
@@ -28,19 +25,8 @@ class GenerarAlerta : BaseActivity() {
         layoutInflater.inflate(R.layout.generar_alerta, findViewById(R.id.content_frame))
 
         alerta = findViewById(R.id.id_alerta)
-        alerta_activada = findViewById(R.id.id_alerta2)
-        constraint_layout2 = findViewById(R.id.constraintlayout_2)
-        spinner = findViewById(R.id.spinner_uv)
         notificationManager = NotificationManager(this)
         sharedPreferences = getSharedPreferences("alert_prefs", Context.MODE_PRIVATE)
-
-        alerta_activada.setOnCheckedChangeListener{_, isChecked ->
-            if (isChecked){
-                constraint_layout2.visibility = View.VISIBLE
-            } else {
-                constraint_layout2.visibility = View.GONE
-            }
-        }
 
         //Spinner opciones
         val opciones = arrayOf(
@@ -52,8 +38,6 @@ class GenerarAlerta : BaseActivity() {
 
         val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, opciones)
         adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
-        spinner.adapter = adaptador
 
         // Restaurar el estado del toggle button
         val isNotificationEnabled = sharedPreferences.getBoolean("is_notification_enabled", false)

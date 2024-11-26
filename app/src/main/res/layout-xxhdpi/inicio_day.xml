@@ -60,7 +60,7 @@
                 android:id="@+id/txt_day"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Miércoles, Septiembre 4th 2024"
+                android:text=""
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="05:00 am"
+                android:text=""
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -93,7 +93,7 @@
                 android:id="@+id/txt_rangeUV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5.8 UV"
+                android:text=""
                 android:textColor="@color/white"
                 android:textSize="40sp"
                 android:textStyle="bold"
@@ -104,7 +104,7 @@
                 android:id="@+id/txt_escala"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="El índice se encuentra en Escala Baja"
+                android:text=""
                 android:textColor="@color/white"
                 android:textSize="10sp"
                 android:textStyle="bold" />
@@ -120,6 +120,7 @@
         android:text="Información:"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
@@ -133,14 +134,14 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.035">
+        app:layout_constraintVertical_bias="0.058">
 
         <LinearLayout
             android:id="@+id/id_radiacion_uv"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
@@ -150,8 +151,8 @@
 
             <ImageView
                 android:id="@+id/btn_radiacion"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/border_black"
                 android:padding="8dp"
                 android:src="@drawable/sol" />
@@ -161,15 +162,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Radiación UV"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_cuidado_piel"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -181,8 +184,8 @@
 
             <ImageView
                 android:id="@+id/btn_cuidado"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/border_black"
                 android:padding="8dp"
                 android:src="@drawable/gorra" />
@@ -193,14 +196,15 @@
                 android:layout_marginTop="10dp"
                 android:text="Cuida tu Piel"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_datos"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -212,8 +216,8 @@
 
             <ImageView
                 android:id="@+id/btn_datos"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/border_black"
                 android:padding="8dp"
                 android:src="@drawable/datos" />
@@ -224,14 +228,15 @@
                 android:layout_marginTop="10dp"
                 android:text="Datos"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/id_acerca_de"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
@@ -241,8 +246,8 @@
 
             <ImageView
                 android:id="@+id/btn_acerca"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/border_black"
                 android:padding="8dp"
                 android:src="@drawable/grupo_users" />
@@ -253,46 +258,9 @@
                 android:layout_marginTop="10dp"
                 android:text="Acerca de"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Acciones:"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintVertical_bias="0.163" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.047">
-
-        <Button
-            android:id="@+id/btn_graficos"
-            android:layout_width="130dp"
-            android:layout_height="45dp"
-            android:background="@drawable/border_button"
-            android:text="Gráfico"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -301,14 +269,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hoy"
+        android:textSize="16sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.079" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_report"
